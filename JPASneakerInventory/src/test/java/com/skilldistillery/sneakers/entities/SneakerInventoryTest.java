@@ -45,7 +45,7 @@ class SneakerInventoryTest {
 	@Test
 	void test() {
 		assertNotNull(snkrs);
-		assertEquals("HP6674", snkrs.getstyle());
+		assertEquals("HP6674", snkrs.getStyle());
 		assertEquals("M", snkrs.getGender());
 		assertEquals(5.0, snkrs.getSize());
 		assertEquals("$249.00", snkrs.getPrice());

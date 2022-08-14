@@ -14,13 +14,9 @@ public interface SnkrDAO {
 
 	List<SneakerInventory> findAll();
 
-	List<SneakerInventory> findByDescription(List<SneakerInventory> description);
-
-	List<SneakerInventory> findByBrand(List<SneakerInventory> description);
-
 	boolean deleteShoe(int id);
 
 	List<SneakerInventory> findByGender(String gender);
 
-	List<SneakerInventory>  findById(Integer id);
+	SneakerInventory findById(int id);
 }

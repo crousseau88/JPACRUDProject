@@ -25,28 +25,46 @@ public class SneakerInventoryController {
 	public String getShoeByStyle(String style, Model model) {
 		List<SneakerInventory> snkr = dao.findByStyle(style);
 		model.addAttribute("shoes", snkr);
-		return "snkrs/show";
+		return "show";
 	}
 
 	@RequestMapping(path = "addShoe.do")
-	public String addShoe(SneakerInventory shoe) {
+	public String addShoe(SneakerInventory sneaker) {
 		return "addShoe";
 	}
+	
+	@RequestMapping(path = "addSuccessful.do")
+	public String addedShoe(SneakerInventory sneaker, Model model) {
+		dao.createShoe(sneaker);
+		model.addAttribute("shoe", sneaker);
+		return "addSuccessful";
+	}
 
-	@RequestMapping(path = "getDescription.do")
-	public String getShoeByDescription(List<SneakerInventory> description, Model model) {
-		List<SneakerInventory> shoe = dao.findByDescription(description);
+	
+	 @RequestMapping(path= "getId.do")
+	  public String getId(Integer id, Model model) {
+		  SneakerInventory snkr = dao.findById(id);
+		  model.addAttribute("shoes", snkr);
+		  return "showbyid";
+	  }
+	@RequestMapping(path = "deleted.do")
+	public String deleteShoe(int id) {
+		SneakerInventory shoe = dao.findById(id);
+		dao.deleteShoe(id);
+		
+		return "deleted";
+	}
+	@RequestMapping(path = "updatedShoe.do")
+	public String updateShoe(Integer id, Model model) {
+		SneakerInventory shoe = dao.findById(id);
+		System.out.println(shoe +"shoe");
 		model.addAttribute("shoe", shoe);
-		return "snkrs/show";
+		return "updatedShoe";
 	}
-	
-	@RequestMapping(path = "getId.do")
- String getById(Integer id, Model model) {
-		List<SneakerInventory> snkr = dao.findById(id);
-		model.addAttribute("shoes", snkr);
-		
-		return "snkrs/show";
-		
+	@RequestMapping(path = "updatedSuccessful.do" )
+	public String updatedShoeSuccessful(SneakerInventory sneaker, Integer id,  Model model) {
+	dao.updateShoe(id, sneaker);
+	model.addAttribute("shoe", sneaker);
+		return "updatedSuccessful";
 	}
-	
 }

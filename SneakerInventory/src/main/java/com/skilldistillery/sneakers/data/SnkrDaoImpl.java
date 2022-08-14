@@ -1,6 +1,6 @@
 package com.skilldistillery.sneakers.data;
 
-import java.awt.print.Book;
+import java.awt.print.Book; 
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,7 +29,7 @@ public class SnkrDaoImpl implements SnkrDAO {
 	@Override
 	public SneakerInventory createShoe(SneakerInventory sneaker) {
 		em.persist(sneaker);
-		;
+		
 		return sneaker;
 	}
 
@@ -38,7 +38,7 @@ public class SnkrDaoImpl implements SnkrDAO {
 		SneakerInventory snkrUpdate = em.find(SneakerInventory.class, id);
 
 		if (snkrUpdate != null) {
-			snkrUpdate.setstyle(shoe.getstyle());
+			snkrUpdate.setStyle(shoe.getStyle());
 			snkrUpdate.setGender(shoe.getGender());
 			snkrUpdate.setSize(shoe.getSize());
 			snkrUpdate.setPrice(shoe.getPrice());
@@ -60,19 +60,7 @@ public class SnkrDaoImpl implements SnkrDAO {
 		return stylesList;
 	}
 
-	@Override
-	public List<SneakerInventory> findByDescription(List<SneakerInventory> description) {
-		String jpql = "SELECT s FROM SneakerInventory s WHERE s.description LIKE :description";
-
-		return em.createQuery(jpql, SneakerInventory.class).getResultList();
-	}
-
-	@Override
-	public List<SneakerInventory> findByBrand(List<SneakerInventory> description) {
-		String jpql = "SELECT s FROM SneakerInventory s WHERE s.brand LIKE :brand";
-
-		return em.createQuery(jpql, SneakerInventory.class).getResultList();
-	}
+	
 
 	  @Override
 	    public boolean deleteShoe(int id) {
@@ -98,14 +86,10 @@ public class SnkrDaoImpl implements SnkrDAO {
 	}
 
 	@Override
-	public List<SneakerInventory> findById(Integer id) {
-		List<SneakerInventory> stylesList = new ArrayList<>();
-
-		String jpql = "SELECT s FROM SneakerInventory s WHERE s.id LIKE :id";
-		stylesList = em.createQuery(jpql, SneakerInventory.class).setParameter("id", "%" + id + "%")
-				.getResultList();
-		return stylesList;
+	public SneakerInventory findById(int sid) {
+		return em.find(SneakerInventory.class, sid);
 	}
+
 
 	
 	

@@ -12,6 +12,7 @@ public class SneakerInventory {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
+	
 	private String style;
 	private String gender;
 	private double size;
@@ -31,11 +32,11 @@ public class SneakerInventory {
 		this.id = id;
 	}
 
-	public String getstyle() {
+	public String getStyle() {
 		return style;
 	}
 
-	public void setstyle(String style) {
+	public void setStyle(String style) {
 		this.style = style;
 	}
 
