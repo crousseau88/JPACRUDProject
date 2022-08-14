@@ -1,0 +1,22 @@
+@charset "UTF-8";
+h1 {
+  font-family: TimesNewRoman;
+  color: purple;
+  text-align: center;
+}
+
+body {
+	text-align: center;
+  
+  color: black;
+}
+table, th, td {
+	font-family: TimesNewRoman;
+	 margin-left:auto; 
+    margin-right:auto;
+  border: 1px solid;
+  text-align: center;
+  color: teal;
+}
+
+ 

@@ -45,7 +45,12 @@ class SneakerInventoryTest {
 	@Test
 	void test() {
 		assertNotNull(snkrs);
-		assertEquals("HP6674", snkrs.getSku());
+		assertEquals("HP6674", snkrs.getstyle());
+		assertEquals("M", snkrs.getGender());
+		assertEquals(5.0, snkrs.getSize());
+		assertEquals("$249.00", snkrs.getPrice());
+		assertEquals("Yeezy", snkrs.getBrand());
+		assertEquals(true, snkrs.getDescription().contains("The adidas Yeezy Boost"));
 	}
 
 }
