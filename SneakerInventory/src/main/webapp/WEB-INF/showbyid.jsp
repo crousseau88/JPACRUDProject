@@ -48,7 +48,7 @@
 						<td>${shoes.description }</td>
 						<td><form action="deleted.do">
 								<input type="hidden" name="id" value="${shoes.id }" />
-								<button class="btn btn-primary" type="submit">Delete</button>
+								<button class="btn btn-danger" type="submit">Delete</button>
 							</form></td>
 						<td><form action="updatedShoe.do">
 								<input type="hidden" name="id" value="${shoes.id }" />

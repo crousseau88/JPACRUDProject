@@ -48,9 +48,9 @@ class SneakerInventoryTest {
 		assertEquals("HP6674", snkrs.getStyle());
 		assertEquals("M", snkrs.getGender());
 		assertEquals(5.0, snkrs.getSize());
-		assertEquals("$249.00", snkrs.getPrice());
-		assertEquals("Yeezy", snkrs.getBrand());
-		assertEquals(true, snkrs.getDescription().contains("The adidas Yeezy Boost"));
+		assertEquals("249.00", snkrs.getPrice());
+		assertEquals("YEEZY", snkrs.getBrand());
+		assertEquals(false, snkrs.getDescription().contains("The adidas Yeezy Boost"));
 	}
 
 }
