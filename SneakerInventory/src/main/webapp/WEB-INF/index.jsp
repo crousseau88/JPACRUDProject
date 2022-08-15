@@ -26,10 +26,13 @@
 		
 		
 		<form action="addShoe.do" method="GET">
-			
-				<input class="btn btn-primary" type="submit" value="AddShoe" />
+				<input class="btn btn-success" type="submit" value="AddShoe" />
 		</form>
-		<c:choose>
+		<br>
+		<form action="showInventory.do" method="GET">
+				<input class="btn btn-warning" type="submit" value="View All Inventory" />
+		</form>
+		<%-- <c:choose>
 			<c:when test="${not empty shoes }">
 				<table class="table table-striped table-hover">
 					<thead class="table-dark">
@@ -57,7 +60,7 @@
 			<c:otherwise>
 				<h3>No shoes found</h3>
 			</c:otherwise>
-		</c:choose>
+		</c:choose> --%>
 	</main>
 	<jsp:include page="bootstrapFoot.jsp" />
 </body>

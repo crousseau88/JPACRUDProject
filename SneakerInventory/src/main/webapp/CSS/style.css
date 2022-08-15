@@ -1,28 +1,41 @@
 @charset "UTF-8";
+
 h1 {
-  font-family: TimesNewRoman;
-  color: purple;
-  text-align: center;
+	font-family: TimesNewRoman;
+	color: Green;
+	font-weight: bold;
+	text-align: center;
 }
 
 body {
-	text-align: center;
-  
-  color: black;
+	background: lightgrey;
+	color: black;
 }
+
 table, th, td {
 	font-family: TimesNewRoman;
-	 margin-left:auto; 
-    margin-right:auto;
-  border: 1px solid;
-  text-align: center;
-  color: teal;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid;
+	text-align: center;
+	color: green;
 }
 
 h2 {
-  font-family: TimesNewRoman;
-  color: blue;
-  text-align: center;
+	font-family: TimesNewRoman;
+	margin-left: auto;
+	margin-right: auto;
+	color: green;
+	text-align: center;
+	margin-right: auto;
 }
 
- 
+h3 {
+	font-family: TimesNewRoman;
+	color: red;
+}
+
+h4 {
+	font-family: TimesNewRoman;
+	font-weight: bold;
+}

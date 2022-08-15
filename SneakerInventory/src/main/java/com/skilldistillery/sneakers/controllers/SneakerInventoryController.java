@@ -20,12 +20,17 @@ public class SneakerInventoryController {
 		model.addAttribute("shoes", dao.findAll());
 		return "index";
 	}
-
 	@RequestMapping(path = "getSneaker.do")
 	public String getShoeByStyle(String style, Model model) {
 		List<SneakerInventory> snkr = dao.findByStyle(style);
 		model.addAttribute("shoes", snkr);
 		return "show";
+	}
+	@RequestMapping(path = "showInventory.do")
+	public String getInventory( Model model) {
+		
+		model.addAttribute("shoes", dao.findAll());
+		return "showInventory";
 	}
 
 	@RequestMapping(path = "addShoe.do")

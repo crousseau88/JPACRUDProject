@@ -9,7 +9,7 @@
 </head>
  <jsp:include page="navbar.jsp"></jsp:include>
 <body>
-<h3>Add Successful</h3>
+<h3>You have successfully added a shoe to the inventory.</h3>
 
 </body>
 </html>

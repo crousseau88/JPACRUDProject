@@ -51,11 +51,8 @@
               <td>${snkrs.brand}</td>
               <td>${snkrs.description}</td>
               
-              <td><form action ="deleted.do"><input type="hidden" name="id" value="${snkrs.id }"/>
-              <button class="btn btn-primary" type="submit">Delete</button></form></td>
-              
-              <td><form action ="updatedShoe.do"><input type="hidden" name="id" value="${snkrs.id }"/>
-              <button class="btn btn-primary" type="submit">Update</button></form></td>
+              <td><form action ="deleted.do"><input type="hidden" name="id" value="${snkrs.id }"/><button class="btn btn-primary" type="submit">Delete</button></form></td>
+              <td><form action ="updatedShoe.do"><input type="hidden" name="id" value="${snkrs.id }"/><button class="btn btn-primary" type="submit">Update</button></form></td>
               
             </tr>
         </c:forEach>
