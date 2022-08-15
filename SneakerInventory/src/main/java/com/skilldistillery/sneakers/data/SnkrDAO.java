@@ -16,7 +16,7 @@ public interface SnkrDAO {
 
 	boolean deleteShoe(int id);
 
-	List<SneakerInventory> findByGender(String gender);
+
 
 	SneakerInventory findById(int id);
 }

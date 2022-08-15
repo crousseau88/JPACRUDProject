@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 h1 {
-	font-family: TimesNewRoman;
-	color: Green;
+	font-family: copperplate;
+	color: rgba(3, 255, 248, 1);
 	font-weight: bold;
 	text-align: center;
 }
@@ -36,6 +36,7 @@ h3 {
 }
 
 h4 {
+	color: rgb(3, 64, 255, 1);
 	font-family: TimesNewRoman;
 	font-weight: bold;
 }

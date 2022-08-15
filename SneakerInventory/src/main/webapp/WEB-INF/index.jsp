@@ -14,13 +14,13 @@
 <link rel="stylesheet" href="CSS/style.css">
 	<jsp:include page="navbar.jsp"></jsp:include>
 	<main class="container-fluid">
-		<h1>Shoe Inventory</h1>
+		<h1>SNEAKER C.R.U.D</h1>
 		<form action="getSneaker.do" method="GET">
-			ShoeStyle: <input class="form-control" type="text" name="style" /> <input
+			<h4>ShoeStyle:</h4> <input class="form-control" type="text" name="style" /> <input
 				class="btn btn-primary" type="submit" value="Search by Style" />
 		</form>
 <form action="getId.do" method="GET">
-			ShoeID: <input class="form-control" type="number" name="id" /> <input
+			<h4>ShoeID:</h4> <input class="form-control" type="number" name="id" /> <input
 				class="btn btn-primary" type="submit" value="Search by ID" />
 		</form> <br>
 		

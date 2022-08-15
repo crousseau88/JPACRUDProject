@@ -9,6 +9,7 @@
 </head>
 <jsp:include page="bootstraphead.jsp" />
  <jsp:include page="navbar.jsp"></jsp:include>
+ <link rel="stylesheet" href="CSS/style.css">
 <body>
 <h3>Update Successful</h3>
 <jsp:include page="bootstrapFoot.jsp" />

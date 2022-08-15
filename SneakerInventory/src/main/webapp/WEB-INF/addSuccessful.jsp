@@ -8,6 +8,7 @@
 <title>Add Successful</title>
 </head>
  <jsp:include page="navbar.jsp"></jsp:include>
+ <link rel="stylesheet" href="CSS/style.css">
 <body>
 <h3>You have successfully added a shoe to the inventory.</h3>
 

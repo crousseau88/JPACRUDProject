@@ -9,6 +9,7 @@
 </head>
 <jsp:include page="bootstraphead.jsp" />
 <jsp:include page="navbar.jsp"></jsp:include>
+<link rel="stylesheet" href="CSS/style.css">
 <body>
  <div>
         <h3>Add a new shoe:</h3>

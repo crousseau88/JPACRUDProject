@@ -76,15 +76,7 @@ public class SnkrDaoImpl implements SnkrDAO {
 	        return successful;
 	    }
 	  
-	@Override
-	public List<SneakerInventory> findByGender(String gender) {
-		List<SneakerInventory> genders = new ArrayList<>();
-		String jpql = "SELECT s FROM SneakerInventory s WHERE s.gender LIKE :gender";
-		genders = em.createQuery(jpql, SneakerInventory.class).setParameter("gender", "%" + gender + "%")
-				.getResultList();
-		return genders;
-	}
-
+	
 	@Override
 	public SneakerInventory findById(int sid) {
 		return em.find(SneakerInventory.class, sid);
