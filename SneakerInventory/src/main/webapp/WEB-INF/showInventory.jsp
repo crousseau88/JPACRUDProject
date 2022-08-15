@@ -26,7 +26,6 @@
             <tr>
 <%--               delete.do?id=${snkrs.id }
 	<input type="hidden" name="id" value="${snkrs.id }"/>
-
  --%>        
  		      <th scope="col">ID</th>
               <th scope="col">Style</th>
@@ -52,7 +51,7 @@
               <td>${snkrs.description}</td>
               
               <td><form action ="deleted.do"><input type="hidden" name="id" value="${snkrs.id }"/><button class="btn btn-danger" type="submit">Delete</button></form></td>
-              <td><form action ="updatedShoe.do"><input type="hidden" name="id" value="${snkrs.id }"/><button class="btn btn-primary" type="submit">Update</button></form></td>
+              <td><form action ="updatedShoe.do"><input type="hidden" name="id" value="${snkrs.id }"/><button class="btn btn-warning" type="submit">Update</button></form></td>
               
             </tr>
         </c:forEach>

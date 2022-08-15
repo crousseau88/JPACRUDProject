@@ -52,7 +52,7 @@
 							</form></td>
 						<td><form action="updatedShoe.do">
 								<input type="hidden" name="id" value="${shoes.id }" />
-								<button class="btn btn-primary" type="submit">Update</button>
+								<button class="btn btn-warning" type="submit">Update</button>
 							</form></td>
 					</tr>
 				</tbody>

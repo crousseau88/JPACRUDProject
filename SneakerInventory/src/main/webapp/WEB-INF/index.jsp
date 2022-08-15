@@ -32,35 +32,7 @@
 		<form action="showInventory.do" method="GET">
 				<input class="btn btn-warning" type="submit" value="View All Inventory" />
 		</form>
-		<%-- <c:choose>
-			<c:when test="${not empty shoes }">
-				<table class="table table-striped table-hover">
-					<thead class="table-dark">
-						
-						<h2>Current Inventory</h2>
-						<tr>
-							<th>Id</th>
-							<th>Style</th>
-							<th>Gender</th>
-							
-						</tr>
-					</thead>
-					<tbody>
-						<c:forEach var="shoes" items="${shoes }">
-							<tr>
-								<td>${shoes.id}</td>
-								<td>${shoes.style }</td>
-								<td>${shoes.gender }</td>
-	
-							</tr>
-						</c:forEach>
-					</tbody>
-				</table>
-			</c:when>
-			<c:otherwise>
-				<h3>No shoes found</h3>
-			</c:otherwise>
-		</c:choose> --%>
+		
 	</main>
 	<jsp:include page="bootstrapFoot.jsp" />
 </body>
